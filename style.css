@@ -33,6 +33,7 @@ body {
     display: none;
 }
 
+/* Media Query------------------------------------------- */
 @media screen and (max-width: 700px) {
     .toggleMenu {
         display: block;
@@ -50,8 +51,21 @@ body {
     .imgheader {
         display: none;
     } */
+
+    .serCont2 {
+        flex-direction: column;
+    }
+
+    .serCont1 div {
+        display: none;
+    }
+
+    .new-arrival-container {
+        flex-basis: 50%;
+    }
 }
 
+/* --------------------------------------------------------- */
 .side-nav {
     background-color: #1d232c;
     width: 50%;
@@ -94,4 +108,124 @@ body {
     border-radius: 10px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.serviceSection {
+    padding: 20px;
+}
+
+.serCont1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serCont2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.serCont2 div {
+    background-color: #f2f4f7;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival-container button {
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #1d232c;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.news input {
+    padding: 11px;
+    width: 80vw;
+    border: 3px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.news button {
+    background-color: #1d232c;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: #1d232c;
+    color: white;
+    padding: 40px;
+}
+
+.product-section {
+    margin: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.product-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img {
+    border-radius: 10px;
 }
